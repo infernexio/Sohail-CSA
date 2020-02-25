@@ -148,7 +148,16 @@ public class SSPicture extends SimplePicture
   }
   
   public void fixUnderWater() {
-	  //finish later
+	  Pixel[][] pixels = this.getPixels2D();
+	    for (Pixel[] rowArray : pixels)
+	    {
+	      for (Pixel pixelObj : rowArray)
+	      {
+	        pixelObj.setBlue((pixelObj.getBlue()-100));
+	        pixelObj.setGreen((pixelObj.getGreen()-75));
+	        pixelObj.setRed(pixelObj.getRed()+50);
+	      }
+	    } 
   }
   
   /** Method that mirrors the picture around a 

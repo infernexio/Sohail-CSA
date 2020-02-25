@@ -56,6 +56,13 @@ public class SSPictureTester
 	    temple.explore();
   }
   
+  public static void testFixUnderWater() {
+	  SSPicture temple = new SSPicture("water.jpg");
+	    temple.explore();
+	    temple.fixUnderWater();
+	    temple.explore();
+  }
+  
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -64,11 +71,12 @@ public class SSPictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+	  testFixUnderWater();
     // testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    testNegate();
+    //testNegate();
 	//textGrayscale();
     //testMirrorVertical();
     //testMirrorDiagonal();
