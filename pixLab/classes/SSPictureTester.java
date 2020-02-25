@@ -6,12 +6,12 @@
  * 
  * @author Barbara Ericson 
  */
-public class PictureTester
+public class SSPictureTester
 {
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
-    Picture beach = new Picture("beach.jpg");
+    SSPicture beach = new SSPicture("beach.jpg");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
@@ -20,7 +20,7 @@ public class PictureTester
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
+    SSPicture caterpillar = new SSPicture("caterpillar.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
@@ -29,28 +29,28 @@ public class PictureTester
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
-    Picture temple = new Picture("temple.jpg");
+    SSPicture temple = new SSPicture("temple.jpg");
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
   }
   
   public static void testKeepOnlyBlue() {
-	  Picture temple = new Picture("beach.jpg");
+	  SSPicture temple = new SSPicture("beach.jpg");
 	    temple.explore();
 	    temple.keepOnlyBlue();
 	    temple.explore();
   }
   
   public static void testNegate() {
-	  Picture temple = new Picture("beach.jpg");
+	  SSPicture temple = new SSPicture("beach.jpg");
 	    temple.explore();
 	    temple.negate();
 	    temple.explore();
   }
   
   public static void textGrayscale() {
-	  Picture temple = new Picture("beach.jpg");
+	  SSPicture temple = new SSPicture("beach.jpg");
 	    temple.explore();
 	    temple.grayscale();
 	    temple.explore();

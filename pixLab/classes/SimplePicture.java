@@ -547,14 +547,14 @@ public class SimplePicture implements DigitalPicture
    * @param yFactor the amount to scale in y
    * @return the resulting picture
    */
-  public Picture scale(double xFactor, double yFactor)
+  public SSPicture scale(double xFactor, double yFactor)
   {
     // set up the scale transform
     AffineTransform scaleTransform = new AffineTransform();
     scaleTransform.scale(xFactor,yFactor);
     
     // create a new picture object that is the right size
-    Picture result = new Picture((int) (getHeight() * yFactor),(int) (getWidth() * xFactor));
+    SSPicture result = new SSPicture((int) (getHeight() * yFactor),(int) (getWidth() * xFactor));
     
     // get the graphics 2d object to draw on the result
     Graphics graphics = result.getGraphics();
@@ -573,11 +573,11 @@ public class SimplePicture implements DigitalPicture
    * @param width the desired width
    * @return the resulting picture
    */
-  public Picture getPictureWithWidth(int width)
+  public SSPicture getPictureWithWidth(int width)
   {
     // set up the scale transform
     double xFactor = (double) width / this.getWidth();
-    Picture result = scale(xFactor,xFactor);
+    SSPicture result = scale(xFactor,xFactor);
     return result;
   }
   
@@ -588,11 +588,11 @@ public class SimplePicture implements DigitalPicture
    * @param height the desired height
    * @return the resulting picture
    */
-  public Picture getPictureWithHeight(int height)
+  public SSPicture getPictureWithHeight(int height)
   {
     // set up the scale transform
     double yFactor = (double) height / this.getHeight();
-    Picture result = scale(yFactor,yFactor);
+    SSPicture result = scale(yFactor,yFactor);
     return result;
   }
  

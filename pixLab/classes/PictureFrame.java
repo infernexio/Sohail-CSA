@@ -55,7 +55,7 @@ public class PictureFrame
    * Method to set the picture to show in this picture frame
    * @param picture the new picture to use
    */
-  public void setPicture(Picture picture)
+  public void setPicture(SSPicture picture)
   {
     this.picture = picture;
     imageIcon.setImage(picture.getImage());

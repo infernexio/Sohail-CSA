@@ -13,14 +13,14 @@ import java.util.List; // resolves problem with java.awt.List and java.util.List
  * 
  * @author Barbara Ericson ericson@cc.gatech.edu
  */
-public class Picture extends SimplePicture 
+public class SSPicture extends SimplePicture 
 {
   ///////////////////// constructors //////////////////////////////////
   
   /**
    * Constructor that takes no arguments 
    */
-  public Picture ()
+  public SSPicture ()
   {
     /* not needed but use it to show students the implicit call to super()
      * child constructors always call a parent constructor 
@@ -32,7 +32,7 @@ public class Picture extends SimplePicture
    * Constructor that takes a file name and creates the picture 
    * @param fileName the name of the file to create the picture from
    */
-  public Picture(String fileName)
+  public SSPicture(String fileName)
   {
     // let the parent class handle this fileName
     super(fileName);
@@ -43,7 +43,7 @@ public class Picture extends SimplePicture
    * @param height the height of the desired picture
    * @param width the width of the desired picture
    */
-  public Picture(int height, int width)
+  public SSPicture(int height, int width)
   {
     // let the parent class handle this width and height
     super(width,height);
@@ -54,7 +54,7 @@ public class Picture extends SimplePicture
    * copy of that picture
    * @param copyPicture the picture to copy
    */
-  public Picture(Picture copyPicture)
+  public SSPicture(SSPicture copyPicture)
   {
     // let the parent class do the copy
     super(copyPicture);
@@ -64,7 +64,7 @@ public class Picture extends SimplePicture
    * Constructor that takes a buffered image
    * @param image the buffered image to use
    */
-  public Picture(BufferedImage image)
+  public SSPicture(BufferedImage image)
   {
     super(image);
   }
@@ -202,7 +202,7 @@ public class Picture extends SimplePicture
    */
   public static void main(String[] args) 
   {
-    Picture beach = new Picture("beach.jpg");
+    SSPicture beach = new SSPicture("beach.jpg");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
