@@ -68,8 +68,8 @@ public class SSPictureTester
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
-	  textGrayscale();
+    testNegate();
+	//textGrayscale();
     //testMirrorVertical();
     //testMirrorDiagonal();
     //testMirrorTemple();

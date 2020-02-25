@@ -140,9 +140,9 @@ public class SSPicture extends SimplePicture
 	    {
 	      for (Pixel pixelObj : rowArray)
 	      {
-	        pixelObj.setRed(pixelObj.getRed()-255);
-	        pixelObj.setBlue(pixelObj.getBlue()-255);
-	        pixelObj.setGreen(pixelObj.getGreen()-255);
+	        pixelObj.setRed((255-pixelObj.getRed()));
+	        pixelObj.setBlue((255-pixelObj.getBlue()));
+	        pixelObj.setGreen((255-pixelObj.getGreen()));
 	      }
 	    }
   }
