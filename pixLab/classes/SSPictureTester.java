@@ -25,6 +25,27 @@ public class SSPictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+  /** Method to test mirror vertical right to left */
+  public static void testMirrorVerticalRightToLeft() {
+	  SSPicture caterpillar = new SSPicture("temple.jpg");
+	    caterpillar.explore();
+	    caterpillar.mirrorVerticalRightToLeft();
+	    caterpillar.explore();
+  }
+  /** Method to test mirror vertical right to left */
+  public static void testHorrizontal() {
+	  SSPicture caterpillar = new SSPicture("KatieFancy.jpg");
+	    caterpillar.explore();
+	    caterpillar.mirrorHorrizontal();
+	    caterpillar.explore();
+  }
+  /** Method to test mirror vertical right to left */
+  public static void testHorrizontalBotToTop() {
+	  SSPicture caterpillar = new SSPicture("KatieFancy.jpg");
+	    caterpillar.explore();
+	    caterpillar.mirrorHorrizontalBotToTop();
+	    caterpillar.explore();
+  }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -34,28 +55,28 @@ public class SSPictureTester
     temple.mirrorTemple();
     temple.explore();
   }
-  
+  /** Method to test keep only blue */
   public static void testKeepOnlyBlue() {
 	  SSPicture temple = new SSPicture("beach.jpg");
 	    temple.explore();
 	    temple.keepOnlyBlue();
 	    temple.explore();
   }
-  
+  /** Method to test negative */
   public static void testNegate() {
 	  SSPicture temple = new SSPicture("beach.jpg");
 	    temple.explore();
 	    temple.negate();
 	    temple.explore();
   }
-  
+  /** Method to test gray scale */
   public static void textGrayscale() {
 	  SSPicture temple = new SSPicture("beach.jpg");
 	    temple.explore();
 	    temple.grayscale();
 	    temple.explore();
   }
-  
+  /** Method to test fix under water */
   public static void testFixUnderWater() {
 	  SSPicture temple = new SSPicture("water.jpg");
 	    temple.explore();
@@ -71,12 +92,15 @@ public class SSPictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-	  testFixUnderWater();
+	// testFixUnderWater();
     // testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
+	//testMirrorVerticalRightToLeft();
+	//testHorrizontal();
+	//testHorrizontalBotToTop();
 	//textGrayscale();
     //testMirrorVertical();
     //testMirrorDiagonal();
