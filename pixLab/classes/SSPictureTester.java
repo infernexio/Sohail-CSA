@@ -46,7 +46,13 @@ public class SSPictureTester
 	    caterpillar.mirrorHorrizontalBotToTop();
 	    caterpillar.explore();
   }
-  
+  /** Method to test mirror vertical right to left */
+  public static void testDiagonal() {
+	  SSPicture caterpillar = new SSPicture("KatieFancy.jpg");
+	    caterpillar.explore();
+	    caterpillar.mirrorDiagonal();
+	    caterpillar.explore();
+  }
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -101,6 +107,7 @@ public class SSPictureTester
 	//testMirrorVerticalRightToLeft();
 	//testHorrizontal();
 	//testHorrizontalBotToTop();
+	  testDiagonal();
 	//textGrayscale();
     //testMirrorVertical();
     //testMirrorDiagonal();
