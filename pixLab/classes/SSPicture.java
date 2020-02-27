@@ -216,6 +216,9 @@ public class SSPicture extends SimplePicture
 		}
 	}
 
+	/** Method that mirrors the picture around a 
+	 * diagnoly mirror in the center of the picture
+	 */
 	public void mirrorDiagonal() {
 		Pixel[][] pixels = this.getPixels2D();
 		Pixel leftPixel = null;
