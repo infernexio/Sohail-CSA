@@ -277,6 +277,27 @@ public class SSPicture extends SimplePicture
 			}
 		}
 	}
+	
+	public void mirrorSnowman() {
+		int mirrorpoint = 191;
+		Pixel topPixel = null;
+		Pixel bottomPixel = null;
+		int count = 0;
+		Pixel[][] pixels = this.getPixels2D();
+
+		// loop through the rows
+		for (int row = 155; row < 191; row++)
+		{
+			// loop from 13 to just before the mirror point
+			for (int col = 98; col < 296; col++)
+			{
+
+				topPixel = pixels[row][col];      
+				bottomPixel = pixels[mirrorpoint - row + mirrorpoint][col];
+				bottomPixel.setColor(topPixel.getColor());
+			}
+		}
+	}
 
 
 

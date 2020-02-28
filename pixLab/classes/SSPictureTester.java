@@ -61,6 +61,15 @@ public class SSPictureTester
     temple.mirrorTemple();
     temple.explore();
   }
+  
+  /** Method to test mirror snowman */
+  public static void testMirrorSnowman()
+  {
+    SSPicture temple = new SSPicture("snowman.jpg");
+    temple.explore();
+    temple.mirrorSnowman();
+    temple.explore();
+  }
   /** Method to test keep only blue */
   public static void testKeepOnlyBlue() {
 	  SSPicture temple = new SSPicture("beach.jpg");
@@ -107,11 +116,12 @@ public class SSPictureTester
 	//testMirrorVerticalRightToLeft();
 	//testHorrizontal();
 	//testHorrizontalBotToTop();
-	  testDiagonal();
+	//testDiagonal();
 	//textGrayscale();
     //testMirrorVertical();
     //testMirrorDiagonal();
-    //testMirrorTemple();
+	//testMirrorTemple();
+	  testMirrorSnowman();
     //testMirrorArms();
     //testMirrorGull();
   }
