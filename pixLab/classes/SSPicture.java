@@ -277,9 +277,8 @@ public class SSPicture extends SimplePicture
 			}
 		}
 	}
-	
+	/** Mirror arms of the snow man to give it 4 arms*/
 	public void mirrorSnowman() {
-		int mirrorpoint = 191;
 		Pixel topPixel = null;
 		Pixel bottomPixel = null;
 		int count = 0;
@@ -289,11 +288,23 @@ public class SSPicture extends SimplePicture
 		for (int row = 155; row < 191; row++)
 		{
 			// loop from 13 to just before the mirror point
-			for (int col = 98; col < 296; col++)
+			for (int col = 98; col < 170; col++)
 			{
 
 				topPixel = pixels[row][col];      
-				bottomPixel = pixels[mirrorpoint - row + mirrorpoint][col];
+				bottomPixel = pixels[191 - row + 191][col];
+				bottomPixel.setColor(topPixel.getColor());
+			}
+		}
+		
+		for (int row = 191; row >= 155; row--)
+		{
+			// loop from 13 to just before the mirror point
+			for (int col = 300; col >= 240; col--)
+			{
+
+				topPixel = pixels[row][col];      
+				bottomPixel = pixels[191 - row + 191][col];
 				bottomPixel.setColor(topPixel.getColor());
 			}
 		}
